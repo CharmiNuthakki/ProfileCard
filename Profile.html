@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #3498db;
+        }
+        .name {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .designation {
+            color: gray;
+            font-size: 16px;
+        }
+        .bio {
+            font-size: 14px;
+            margin: 10px 0;
+            color: #555;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .social-icons a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #3498db;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #2980b9;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="card">
+        <img src="https://raw.githubusercontent.com/CharmiNuthakki/Images/refs/heads/main/%23%D0%90%D0%A0%D0%A2%D0%9F%D0%9E%D0%A0%D0%A2%D0%A0%D0%95%D0%A2.jpeg" alt="Profile Picture" class="profile-img">
+        <div class="name">Charmi Nuthakki</div>
+        <div class="designation">Associate Software Engineer</div>
+        <p class="bio">Passionate about creating interactive applications and experiences on the web.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</body>
+</html>
